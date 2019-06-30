@@ -3,7 +3,7 @@
  * Date:     2019/6/29 19:00
  * Description:
  */
-package com.test.mybatis.po.dao;
+package com.test.mybatis.dao;
 
 import com.mybatis.framework.sqlsession.SqlSession;
 import com.mybatis.framework.sqlsession.SqlSessionFactory;

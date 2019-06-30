@@ -1,8 +1,8 @@
 import com.mybatis.framework.sqlsession.SqlSessionFactory;
 import com.mybatis.framework.sqlsession.SqlSessionFactoryBuilder;
 import com.test.mybatis.po.User;
-import com.test.mybatis.po.dao.UserDao;
-import com.test.mybatis.po.dao.UserDaoImpl;
+import com.test.mybatis.dao.UserDao;
+import com.test.mybatis.dao.UserDaoImpl;
 import org.junit.Before;
 import org.junit.Test;
 
