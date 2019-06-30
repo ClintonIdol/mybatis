@@ -26,9 +26,7 @@ public class SqlSessionFactoryBuilder {
          * 通过InputStream流对象，去创建Document对象（dom4j）
          */
         Document document = DocumentReader.createDocumentByInputStream(inputStream);
-        /**
-         * 对document进行解析
-         */
+        /**对全局配置文件进行解析*/
         XMLConfigParser xmlConfigParser = new XMLConfigParser(configuration);
         xmlConfigParser.parseConfiguration(document.getRootElement());
         return this.build();
@@ -37,9 +35,7 @@ public class SqlSessionFactoryBuilder {
     //方式二 字符流法
     public SqlSessionFactory build(Reader reader) {
         Document document = DocumentReader.createDocumentByReader(reader);
-        /**
-         * 对document进行解析
-         */
+        /**对全局配置文件进行解析*/
         XMLConfigParser xmlConfigParser = new XMLConfigParser(configuration);
         xmlConfigParser.parseConfiguration(document.getRootElement());
         return this.build();
