@@ -16,9 +16,9 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory {
      * 这里会使用jdbc那套东西
      * @return
      */
+    @Override
     public SqlSession openSession() {
-        //TODO
-        return null;
+        return new DefaultSqlSession(configuration);
     }
 
     //构造方法注入Configuration对象

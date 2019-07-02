@@ -6,7 +6,7 @@
 			<dataSource type="DBCP">
 				<property name="driver" value="com.mysql.jdbc.Driver"></property>
 				<property name="url"
-					value="jdbc:mysql://localhost:3306/ssm"></property>
+					value="jdbc:mysql://localhost:3306/user"></property>
 				<property name="username" value="root"></property>
 				<property name="password" value="root"></property>
 			</dataSource>

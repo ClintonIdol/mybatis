@@ -10,6 +10,10 @@ public class User {
 
     private String name;
 
+    private String address;
+
+    private String fav;
+
     public Integer getId() {
         return id;
     }
@@ -26,11 +30,36 @@ public class User {
         this.name = name;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getFav() {
+        return fav;
+    }
+
+    public void setFav(String fav) {
+        this.fav = fav;
+    }
+
+    public User(Integer id) {
+        this.id = id;
+    }
+
+    public User() {
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", fav='" + fav + '\'' +
                 '}';
     }
 }

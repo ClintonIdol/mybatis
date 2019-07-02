@@ -31,7 +31,8 @@ public class UserDaoTest {
     @Test
     public void testQueryUserById() {
         UserDao userDao = new UserDaoImpl(sqlSessionFactory);
-        User user = userDao.queryUserById(1);
+        User reqUser = new User(1);
+        User user = userDao.queryUserById(reqUser);
         System.out.print(user);
     }
 }

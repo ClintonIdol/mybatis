@@ -7,23 +7,17 @@ package com.mybatis.framework.config;
 
 public class ParameterMapping {
 
-    private String value;
+    private String name;
 
-    private String valueType;
-
-    public String getValue() {
-        return value;
+    public String getName() {
+        return name;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getValueType() {
-        return valueType;
-    }
-
-    public void setValueType(String valueType) {
-        this.valueType = valueType;
+    public ParameterMapping(String name) {
+        this.name = name;
     }
 }

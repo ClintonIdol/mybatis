@@ -80,6 +80,6 @@ public class XMLConfigParser {
         InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(resource);
         Document document = DocumentReader.createDocumentByInputStream(inputStream);
         XMLMapperParser xmlMapperParser = new XMLMapperParser(configuration);
-        configuration = xmlMapperParser.parse(document.getRootElement());
+        xmlMapperParser.parse(document.getRootElement());
     }
 }

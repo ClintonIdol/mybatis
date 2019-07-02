@@ -5,20 +5,16 @@
  */
 package com.mybatis.framework.config;
 
-import java.util.List;
-
 public class MapperStatement {
     private String id;
 
-    private String parameterType;
+    private Class<?> parameterTypeClass;
 
-    private String resultType;
+    private Class<?> resultTypeClass;
 
     private String statementType;
 
-    private String sql;
-
-    private List<ParameterMapping> parameterMappingList;
+    private SqlSource sqlSource;
 
     public String getId() {
         return id;
@@ -28,20 +24,20 @@ public class MapperStatement {
         this.id = id;
     }
 
-    public String getParameterType() {
-        return parameterType;
+    public Class<?> getParameterTypeClass() {
+        return parameterTypeClass;
     }
 
-    public void setParameterType(String parameterType) {
-        this.parameterType = parameterType;
+    public void setParameterTypeClass(Class<?> parameterTypeClass) {
+        this.parameterTypeClass = parameterTypeClass;
     }
 
-    public String getResultType() {
-        return resultType;
+    public Class<?> getResultTypeClass() {
+        return resultTypeClass;
     }
 
-    public void setResultType(String resultType) {
-        this.resultType = resultType;
+    public void setResultTypeClass(Class<?> resultTypeClass) {
+        this.resultTypeClass = resultTypeClass;
     }
 
     public String getStatementType() {
@@ -52,19 +48,11 @@ public class MapperStatement {
         this.statementType = statementType;
     }
 
-    public String getSql() {
-        return sql;
+    public SqlSource getSqlSource() {
+        return sqlSource;
     }
 
-    public void setSql(String sql) {
-        this.sql = sql;
-    }
-
-    public List<ParameterMapping> getParameterMappingList() {
-        return parameterMappingList;
-    }
-
-    public void setParameterMappingList(List<ParameterMapping> parameterMappingList) {
-        this.parameterMappingList = parameterMappingList;
+    public void setSqlSource(SqlSource sqlSource) {
+        this.sqlSource = sqlSource;
     }
 }

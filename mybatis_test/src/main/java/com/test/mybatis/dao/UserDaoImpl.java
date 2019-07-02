@@ -19,10 +19,10 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public User queryUserById(Integer id) {
+    public User queryUserById(User reqUser) {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         String statementId = "test.findUserById";
-        User user = sqlSession.selectOne(statementId, id);
+        User user = sqlSession.selectOne(statementId, reqUser);
         return user;
     }
 }

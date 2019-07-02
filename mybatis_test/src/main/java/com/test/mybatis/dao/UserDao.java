@@ -8,5 +8,5 @@ package com.test.mybatis.dao;
 import com.test.mybatis.po.User;
 
 public interface UserDao {
-    User queryUserById(Integer id);
+    User queryUserById(User user);
 }
